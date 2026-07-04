@@ -15,3 +15,5 @@ Goggles - ["VSM_beard_1","VSM_beard_2","Bear_RoundGlasses","Bear_RoundGlasses_bl
 Vehicles - ["C_Van_01_fuel_F","UK3CB_C_Hatchback","C_Hatchback_01_F","UK3CB_C_Hilux_Closed","UK3CB_C_Hilux_Open","C_Offroad_02_unarmed_F","UK3CB_C_Lada","UK3CB_C_Landcruiser","UK3CB_C_Octavia","C_Offroad_01_F","C_Offroad_01_covered_F","C_Offroad_01_repair_F","UK3CB_C_Pickup","C_Pickup_rf","UK3CB_C_Sedan","UK3CB_C_Skoda","C_Van_01_transport_F","C_Van_01_box_F","UK3CB_C_TT650","C_Van_02_vehicle_F","C_Van_02_transport_F","UK3CB_C_Gaz24","UK3CB_C_Golf","UK3CB_C_YAVA","UK3CB_C_MMT","UK3CB_CHC_C_LR_Closed","UK3CB_CHC_C_Old_Bike"]
 
 Animal Cargo - ["UK3CB_C_Hilux_Open","C_Offroad_01_F","C_Van_01_transport_F"]
+
+Demo edit for tutorial purposes.
