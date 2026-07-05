@@ -1,6 +1,6 @@
 # NZF Mission Template 2025
 
-A comprehensive Arma 3 mission template developed by [NZF] JD Wang.
+A comprehensive Arma 3 mission template developed by [NZF] JD Wang and maintained by the NZF Mission Makers.
 
 ## Features
 
@@ -61,3 +61,7 @@ The template includes various CBA settings that can be configured:
 ## Credits
 
 Created by [NZF] JD Wang
+Maintained by:
+  [NZF] Old_Mate
+  [NZF] Fox
+  [NZF] Dislexic Llarma

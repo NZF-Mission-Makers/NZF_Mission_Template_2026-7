@@ -18,8 +18,8 @@ params ["_player"];
 if (!local _player) exitWith {};
 
 // Initialize exit order tracking if not exists
-if (isNil "NZF_HALO_exitOrder") then {
-    NZF_HALO_exitOrder = 0;
+if (isNil {missionNamespace getVariable "NZF_HALO_exitOrder"}) then {
+    missionNamespace setVariable ["NZF_HALO_exitOrder", 0, true];
 };
 
 // Get initial position after detachment
@@ -43,8 +43,8 @@ _player allowDamage false;
     // If player hasn't jumped yet, check for 1m drop
     if (!_hasJumped && (_initialPos select 2) - (_currentPos select 2) >= 1) then {
         // Get current exit order and increment for next player
-        private _exitOrderNum = NZF_HALO_exitOrder;
-        NZF_HALO_exitOrder = NZF_HALO_exitOrder + 1;
+        private _exitOrderNum = missionNamespace getVariable ["NZF_HALO_exitOrder", 0];
+        missionNamespace setVariable ["NZF_HALO_exitOrder", _exitOrderNum + 1, true];
         
         // Calculate velocity based on exit order (earlier exits get more velocity)
         private _baseVelocity = 20; // Base forward velocity
