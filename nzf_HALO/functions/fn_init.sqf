@@ -14,6 +14,15 @@
 
 if (!isServer) exitWith {};
 
+// Verify that all editor-placed objects exist
+try {
+    {
+        if (isNil _x || { isNull _x } ) then { throw format["NZF_HALO INIT --- %1 does not exist", _x]; }
+    } forEach [jumpPlane, groundplane, groundTrigger, jumpMasterGround];
+} catch {
+    debugLog _exception;
+};
+
 // Initialize jump positions array if not already done (server-side only)
 if (isNil "NZF_HALO_jumpPositions") then {
     NZF_HALO_jumpPositions = [
@@ -76,9 +85,9 @@ addMissionEventHandler ["HandleDisconnect", {
 }];
 
 // Setup Ground based Jump Master
-jumpmasterground disableAI "ALL";
-jumpmasterground attachTo [groundplane, [-1.1,8.8,1.3]];
-detach jumpmasterground;
+jumpMasterGround disableAI "ALL";
+jumpMasterGround attachTo [groundplane, [-1.1,8.8,1.3]];
+detach jumpMasterGround;
 jumpMasterGround setdir (getdir groundplane) +180;
 
 // Setup internal aircraft lights on all clients

@@ -13,6 +13,7 @@ class nzf_HALO {
         class setJumpLights {};
         class cleanupJumpSequence {};
         class fadeOutInternalSound {};
+        class detachPlayer {};
         class startRampSequence {};
     };
 }; 

@@ -44,7 +44,7 @@ _jumpMaster playAction "salute";
         // Detach all players where they are local and start monitoring their exit
         {
             private _player = _x;
-            [_player] remoteExec ["detach", _player];
+            [_player] remoteExec ["nzf_HALO_fnc_detachPlayer", _player];
             [_player] remoteExec ["nzf_HALO_fnc_handlePlayerExit", _player];
         } forEach (missionNamespace getVariable ["NZF_HALO_jumpers", []]);
         
